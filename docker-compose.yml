@@ -1,0 +1,30 @@
+version: '1'
+services:
+  # juiceshop:
+  #   image: bkimminich/juice-shop
+  #   hostname: juiceshop.local
+  #   ports:
+  #     - '3000:3000'
+  # webgoat:
+  #   image: webgoat/goatandwolf
+  #   hostname: webgoat.local
+  #   ports:
+  #     - '8080:8080'
+  #     - '9090:9090'
+  # metasploitable:
+  #   image: tleemcjr/metasploitable2
+  #   hostname: metasploitable.local
+  #   ports:
+  #     - '80:80'
+  travesty:
+    image: httpd:2.4.49
+    hostname: travesty.local
+    volumes:
+      - ./travesty/httpd.conf:/usr/local/apache2/conf/httpd.conf
+      - ./travesty/index.html:/usr/local/apache2/htdocs/index.html
+      - ./travesty/get_time.pl:/usr/local/apache2/cgi-bin/get_time.pl
+      - ./travesty/backups.sh:/home/backups.sh
+      - ./travesty/entrypoint.sh:/entrypoint.sh
+    entrypoint: /entrypoint.sh
+    ports:
+      - '80:80'
