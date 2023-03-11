@@ -1,10 +1,13 @@
-version: '1'
+version: '3'
 services:
-  # juiceshop:
-  #   image: bkimminich/juice-shop
-  #   hostname: juiceshop.local
-  #   ports:
-  #     - '3000:3000'
+  juiceshop:
+    image: bkimminich/juice-shop
+    hostname: juiceshop.local
+    ports:
+      - '3000:3000'
+    networks:
+      corp:
+        ipv4_address: 1.1.1.16
   # webgoat:
   #   image: webgoat/goatandwolf
   #   hostname: webgoat.local
@@ -28,3 +31,20 @@ services:
     entrypoint: /entrypoint.sh
     ports:
       - '80:80'
+    networks:
+      dmz:
+        ipv4_address: 1.2.3.15
+      corp:
+        ipv4_address: 1.1.1.15
+
+networks:
+  dmz:
+    ipam:
+      config:
+        - subnet: 1.2.3.1/24
+  corp:
+    internal: true
+    ipam:
+      config:
+        - subnet: 1.1.1.1/24
+
