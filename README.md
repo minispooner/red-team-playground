@@ -1,5 +1,5 @@
-# red-team-playground
-Goals: The Red Team Playground is a free, Dockerized, community-built vulnerable testing lab for learning and practicing Red Teaming concepts. 
+# Red Team Playground
+The Red Team Playground is a Dockerized vulnerable testing lab for learning and practicing Red Teaming concepts.
 
 __Current Phase:__ Planning\
 __Next Phases:__ Development, Testing, Playing!
