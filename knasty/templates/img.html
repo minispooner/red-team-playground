@@ -1,0 +1,6 @@
+
+{% for entry in entries %}
+<a href="/img/{{entry.id}}"><h1> ID : {{entry.id}}</h1></a>
+<h2>Name : {{ entry.link|safe }}</h2>
+<img src=' /static/uploads/{{ entry.link }}' width="230" height="230">
+{% endfor %}

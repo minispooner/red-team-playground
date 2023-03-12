@@ -1,8 +1,16 @@
 version: '3'
 services:
+  knasty:
+    build: knasty/.
+    hostname: knasty.local
+    ports:
+      - '1017:1017'
+    networks:
+      dmz:
+        ipv4_address: 1.2.3.17
   juiceshop:
     image: bkimminich/juice-shop
-    hostname: juiceshop.local
+    hostname: juiceshop.corp
     ports:
       - '3000:3000'
     networks:
