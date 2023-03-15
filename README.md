@@ -4,7 +4,7 @@ The Red Team Playground is a Dockerized vulnerable lab network for learning and 
 
 ## Want to Collaborate?
 1. Jump in the coversations on the Issues! Don't be shy :)
-2. Tip: run your ideas by the Issues threads before coding and creating PRs to avoid lost work
+2. Tip: run your ideas by the Issues threads before coding and creating PRs to avoid lost or duplicate work
 
 
 ## Planning
