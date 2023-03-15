@@ -1,5 +1,5 @@
 # Red Team Playground
-The Red Team Playground is a Dockerized vulnerable testing lab for learning and practicing Red Teaming concepts.
+The Red Team Playground is a Dockerized vulnerable testing lab network for learning and practicing Red Teaming concepts. Hack, persist, pivot, command & control, loot, evade. Get learnt.
 
 
 ## Want to Collaborate?
