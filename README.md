@@ -2,6 +2,11 @@
 The Red Team Playground is a Dockerized vulnerable testing lab for learning and practicing Red Teaming concepts.
 
 
+## Want to Collaborate?
+1. Jump in the coversations on the Issues! Don't be shy :)
+2. Tip: run your ideas by the Issues threads before coding and creating PRs to avoid lost work
+
+
 ## Planning
 __Desireable features include:__
 1. Many vulnerable targets for practicing recon, exploitation, priv esc, C2
@@ -26,7 +31,7 @@ __Desireable features include:__
 - Add in a few trainings on what it means to Red Team. Could be lessons then a lab/objective, etc
 
 
-## Details
+## Notes clipboard
 ### Juice Shop
 http://localhost:3000/#/
 
