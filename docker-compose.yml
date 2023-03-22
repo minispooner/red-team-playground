@@ -1,5 +1,22 @@
 version: '3'
 services:
+  # RED TEAM INFRA
+  c2:
+    build: c2/.
+    hostname: c2.local
+    ports:
+     - '50050:50050'
+    networks:
+      dmz:
+        ipv4_address: 1.2.3.2
+  # BLUE TEAM INFRA
+  # edr:
+  #   build: edr/.
+  #   hostname: edr.local
+  #   networks:
+  #     dmz:
+  #       ipv4_address: 1.2.3.10
+  # VULNERABLE MACHINES
   knasty:
     build: knasty/.
     hostname: knasty.local
@@ -16,17 +33,6 @@ services:
     networks:
       corp:
         ipv4_address: 1.1.1.16
-  # webgoat:
-  #   image: webgoat/goatandwolf
-  #   hostname: webgoat.local
-  #   ports:
-  #     - '8080:8080'
-  #     - '9090:9090'
-  # metasploitable:
-  #   image: tleemcjr/metasploitable2
-  #   hostname: metasploitable.local
-  #   ports:
-  #     - '80:80'
   travesty:
     image: httpd:2.4.49
     hostname: travesty.local
@@ -44,7 +50,17 @@ services:
         ipv4_address: 1.2.3.15
       corp:
         ipv4_address: 1.1.1.15
-
+  # webgoat:
+  #   image: webgoat/goatandwolf
+  #   hostname: webgoat.local
+  #   ports:
+  #     - '8080:8080'
+  #     - '9090:9090'
+  # metasploitable:
+  #   image: tleemcjr/metasploitable2
+  #   hostname: metasploitable.local
+  #   ports:
+  #     - '80:80'
 networks:
   dmz:
     ipam:
