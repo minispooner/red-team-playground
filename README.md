@@ -6,6 +6,12 @@ The Red Team Playground is a Dockerized vulnerable lab network for learning and 
 1. Jump in the coversations on the Issues! Don't be shy :)
 2. Tip: run your ideas by the Issues threads before coding and creating PRs to avoid lost or duplicate work
 
+## Milestones
+| Description | Completion |
+| ----------- | ---------- |
+| Add a few vulnerable hosts | 3/11/23 |
+| Add C2 - Metasploit, Sliver | 3/31/23 |
+| Add BlueBot monitoring | In Progress |
 
 ## Planning
 __Desireable features include:__
