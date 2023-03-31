@@ -12,6 +12,8 @@ RUN apt-get update -y && apt-get upgrade -y
 
 # Install Metasploit
 RUN apt-get install metasploit-framework -y
+
+# Install C2 services
 COPY init_* /opt/
 
 ENTRYPOINT /opt/init_c2_services.sh
