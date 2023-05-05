@@ -1,5 +1,5 @@
 # Red Team Playground
-The Red Team Playground is a Dockerized vulnerable lab network for learning and practicing Red Teaming concepts. Hack, persist, pivot, command & control, loot, evade.
+The Red Team Playground is a Dockerized vulnerable lab network for learning and practicing Red Teaming concepts. Hack, persist, pivot, command & control, loot, monitor, evade.
 
 
 ## Want to Collaborate?
@@ -11,25 +11,21 @@ The Red Team Playground is a Dockerized vulnerable lab network for learning and 
 | ----------- | ---------- |
 | Add a few vulnerable hosts | 3/11/23 |
 | Add C2 - Metasploit, Sliver | 3/31/23 |
-| Add BlueBot monitoring | In Progress |
+| Add Wazuh monitoring | 5/4/2023 |
+| Automate "incident responders" | Planning |
 
-## Planning
-__Desireable features include:__
-1. Many vulnerable targets for practicing recon, exploitation, priv esc, C2
-2. Defensive measures (EDR, firewalls, logging) to practice evasion and bypass
-  - this could include a "BlueBot" machine that simulates a blue teamer w crontabs that restarts certain server processes every 5 mins (for practicing persistence).
-  - there could also be a management dashboard as well to show when certain alerts fire off - for red teamers to better understand what gets flagged
-3. Multiple networks for practicing lateral and pivoting internally and cloud* (fontend/backend, dmz, dummy aws metadata server, etc)
+## Features Included
+1. Vulnerable targets for practicing recon, exploitation, persistence, priv esc
+2. C2 infrastructure
+3. Defensive monitoring (monitoring dashboard + alerts, file integrity monitoring) to practice evasion, better understand IR
+  - TODO: include a "BlueBot" process that simulates a blue teamer w crontabs that restarts certain server processes every 5 mins (for practicing persistence), etc
+3. TODO: multiple networks for practicing lateral and pivoting internally and cloud* (fontend/backend, dmz, dummy aws metadata server, etc)
 4. Red Teamer game scenarios to emulate adversaries (access the customer database, hold the s3 bucket for ransom, run a miner for 10 mins without raising alerts, etc)
 
 
 ## Development
 - Projects can be tracked and worked on as Issues
 - Changes should be made on new branches and a PR submitted to merge into main, to be reviewed my minispooner
-
-
-## Testing
-- Done during Development...
 
 
 ## Playing
